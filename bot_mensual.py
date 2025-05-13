@@ -5,7 +5,7 @@ import asyncio
 
 async def enviar_mensaje(bot, chat_id):
     ahora = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    mensaje = f"📅 Aviso programado: Hoy es {ahora} : dile al Inquilino que apunte el contador del agua o que te envíe una foto"
+    mensaje = f"📅 Aviso programado: Hoy es {ahora} : dile al Inquilino que APUNTE LA MEDIDA DEL AGUA o que te envíe una foto"
     await bot.send_message(chat_id=chat_id, text=mensaje)
     print(f"Mensaje enviado correctamente a las {ahora}")
 
